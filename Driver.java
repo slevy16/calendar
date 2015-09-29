@@ -42,13 +42,9 @@ public class Driver{
         System.out.println("Enter the event date: ");
         int date1 = s.nextInt();
         s.nextLine();
-        System.out.println("Enter the event hour: ");
-        String hour1 = s.nextLine();
-        System.out.println("Enter the event minute: ");
-        String minute1 = s.nextLine();
         System.out.println("Enter the event name: ");
         String name1 = s.nextLine();
-        Event e1 = new Event(name1, hour1, minute1);
+        Event e1 = new Event(name1, "0", "0");
         if(days.containsKey(month1 + " " + date1)){
           days.get(month1 + " " + date1).removeEvent(e1);
           System.out.println("Event removed");

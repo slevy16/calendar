@@ -20,7 +20,6 @@ public class Day{
     for(int i = 0; i< events.size(); i++){
       if(events.get(i).equals(e)){
         events.remove(i);
-        System.out.println("Event found");
     }
       }
   }
